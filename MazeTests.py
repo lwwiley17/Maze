@@ -29,9 +29,10 @@ class testMaze(unittest.TestCase):
         """
         pass
     
-#    def testScreenExists(self)
-#        assert type(self.m.s) == turtle._Screen
+    def testScreenExists(self):
+        assert type(self.m.screen) == turtle._Screen
 
+    def testTurtleExists(self):
+        assert type(self.m.turtle) == turtle._Turtle
 
-#if __name__ == "__main__":
-#    unittest.main(exit = False)
+unittest.main()
